@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+backend/node_modules/
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/data/
+.aquaflow-port
+.DS_Store
+npm-debug.log*

@@ -1,0 +1,11 @@
+{
+  "name": "AquaFlow Automated Ordering, Billing and Gallon Inventory System",
+  "short_name": "AquaFlow",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f9fc",
+  "theme_color": "#0d6efd",
+  "description": "Responsive offline-ready water station ordering, billing and gallon inventory system.",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

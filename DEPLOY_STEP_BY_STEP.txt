@@ -1,0 +1,20 @@
+AQUAFLOW DEPLOYMENT QUICK GUIDE
+
+1. Extract this ZIP and upload the project to GitHub.
+2. Render > New > Web Service > select repository.
+   Root Directory: backend
+   Build Command: npm install
+   Start Command: npm start
+3. After Render is live, copy its service URL.
+4. In Render Environment, set FRONTEND_URL to the full Netlify site origin.
+5. Netlify > Add new site > Import from Git.
+   Base directory: blank
+   Build command: npm run build
+   Publish directory: dist
+6. In Netlify environment variables, set VITE_API_URL to the Render URL (no /api at end).
+7. Redeploy Netlify after setting VITE_API_URL.
+8. Test Render URL + /api/health, then test the Netlify app.
+9. If records must persist, attach a Render persistent disk and set AQUAFLOW_DATA_DIR to its mount path.
+10. Before public use, replace demo authentication with secure server-verified auth.
+
+Do not share or commit real passwords, private keys, or .env files.

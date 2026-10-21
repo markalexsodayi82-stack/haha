@@ -1,0 +1,3 @@
+import { money } from '../services/core-data.js';
+export function ProductCard({ product, quantity=0, onAdd, onRemove }) { return <article className="card product-card"><div className="product-card-icon"><i className="bi bi-droplet-fill" /></div><div><h5>{product.name}</h5><small>{product.size}</small><strong>{money(product.price)}</strong></div><div className="product-card-actions">{quantity > 0 && <button className="btn btn-sm btn-light" onClick={()=>onRemove?.(product)}>-</button>}<span>{quantity}</span><button className="btn btn-sm btn-primary" onClick={()=>onAdd?.(product)}>+</button></div></article>; }
+export default ProductCard;

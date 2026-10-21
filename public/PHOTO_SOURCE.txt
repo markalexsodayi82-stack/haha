@@ -1,0 +1,4 @@
+AquaFlow UI uses a real photograph of a water refilling station in Lobo, Batangas, Philippines.
+Source: Wikimedia Commons, uploaded by Fiszi37.
+License: CC0 1.0 Universal Public Domain Dedication.
+The image is loaded from Wikimedia Commons in the landing/login UI.

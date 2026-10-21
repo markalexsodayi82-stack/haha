@@ -1,0 +1,16 @@
+AquaFlow — FINAL FIX
+
+IMPORTANT FIX IN THIS BUILD
+The navigation crash “destroy is not a function” was caused by async loader functions being passed directly to React useEffect. React interpreted the returned Promise as an effect cleanup function. All affected effects are now wrapped so they return nothing and all customer/admin modules can be opened safely.
+
+RUN
+1. Extract this ZIP.
+2. Open a terminal in the extracted folder.
+3. npm install
+4. Terminal 1: npm run backend
+5. Terminal 2: npm run dev
+
+If an old AquaFlow tab is open, close it and reopen the new localhost URL. The app also unregisters the old AquaFlow service worker/cache.
+
+Backend
+The backend launcher automatically uses an available port if 8080 is occupied.
